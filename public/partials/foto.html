@@ -1,0 +1,23 @@
+<div class= "page-header text-center">
+    <h1> {{foto.titulo}} </h1>
+</div>
+
+<p ng-show="mensagem.length" class="alert alert-info"> {{mensagem}}</p>
+
+<form novalidate name="formulario" class="row" ng-submit="submeter()">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label> Título </label>
+            <input name= "titulo" class="form-control" ng-model="foto.titulo" required>
+
+            <span ng-show = "formulario.$submitted && formulario.titulo.$error.required"
+            class="form-control alert-danger">
+            Título Obrigatório !!!
+            </span>
+
+            <span >
+
+            </span>
+        </div>
+    </div>
+</form>
