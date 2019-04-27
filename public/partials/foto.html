@@ -12,12 +12,48 @@
 
             <span ng-show = "formulario.$submitted && formulario.titulo.$error.required"
             class="form-control alert-danger">
-            Título Obrigatório !!!
+                Título Obrigatório !!!
             </span>
 
-            <span >
-
+            <span ng-show="formulario.$submitted && formulario.titulo.$error.maxlenght"
+            class="form-control alert-danger">
+                No Máximo 20 caracteres ! 
             </span>
         </div>
+        <div class="form-group">
+            <label> URL </label>
+            <input name="url" class="form-control" ng-model="foto.url" required>
+
+            <span ng-show = "formulario.$submitted $$ formulario.url.$error.required"
+                  class="form-control alert-danger">
+                URL Obrigatória
+            </span>
+        </div>
+        <div class="form-group">
+            <label> Descrição </label>
+            <textarea name="descricao" class="form-control" ng-model="foto.descricao">
+            </textarea>
+        </div>
+        <div class="form-group">
+            <label> Grupo </label>
+            <select name="grupo" ng-model="foto.grupo" class="form-control"
+                    required ng-controller="GruposController"
+                    ng-options="grupo._id as (grupo.nome | uppercase) for grupo in grupos">
+                <option value=""> Selecione uma opção </option>
+            </select>
+            <span ng-show="formulario.$submitted && formulario.grupo.$error.required"
+                class="form-control alert-danger">
+                Grupo Obrigatório
+            </span>
+        </div>
+        <button type="submit" class="btn btn-primary " ng-disabled="formulario.$invalid">
+            Salvar 
+        </button>
+        <a href="/" meu-focus class="btn btn-primary"> Voltar </a>
+        <hr>
+    </div>
+    <div class="col-md-6">
+        <minha-foto url="{{foto.url}}" titulo="{{foto.titulo}}"> 
+        </minha-foto>
     </div>
 </form>
