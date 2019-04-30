@@ -1,3 +1,4 @@
+
 angular.module('ImoveisNR' , ['minhasDiretivas' , 'ngAnimate' , 'ngRoute' , 'ngResource' , 'meusServicos'])
     .config(function($routeProvider, $locationProvider) {
 

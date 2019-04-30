@@ -17,6 +17,6 @@ module.exports = function(app) {
     app.get('/v1/fotos/grupo/: grupoId' , api.listaGrupos);
 
     app.all('/*' ,function (req, res) {
-        res.sendFile(path.resolve('public/index.html'));
+        res.sendFile(path.resolve('public/partials/index.html'));
     });
 };   

@@ -1,6 +1,8 @@
-angular.module('ImoveisNR').controller('FotosController', function($scope, recursoFoto) {
+// DEFININDO A FOTO PARA A VIEW.
+angular.module('ImoveisNR').controller('FotosController', function($scope,$http,recursoFoto) {
 
-    $scope.fotos = [];
+    // SCOPE SERVE PARA O CONTROLLER CONSEGUIR DISPONIBILIZAR DADOS PARA A VIEW.
+    $scope.fotos = []; 
     $scope.filtro = '';
     $scope.mensagem = '';
 
