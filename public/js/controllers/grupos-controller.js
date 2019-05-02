@@ -1,4 +1,4 @@
-angular.module('ImoveisNR')
+angular.module('projeto_imoveis_angularjs')
     .controller('GruposController' , function($scope, $http) {
         $http.get('/v1/grupos')
             .success(function(grupos) {

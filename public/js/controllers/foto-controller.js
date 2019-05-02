@@ -1,4 +1,4 @@
-angular.module('ImoveisNR')
+angular.module('projeto_imoveis_angularjs')
     .controller('FotoController' , ['$scope' , 'recursoFoto' , '$routeParams' , 'cadastroDeFotos' , function($scope, recursoFoto , $routeParams , cadastroDeFotos) {
 
         $scope.foto = {};

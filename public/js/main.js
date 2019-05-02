@@ -1,5 +1,5 @@
 
-angular.module('ImoveisNR' , ['minhasDiretivas' , 'ngAnimate' , 'ngRoute' , 'ngResource' , 'meusServicos'])
+angular.module('projeto_imoveis_angularjs' , ['minhasDiretivas' , 'ngAnimate' , 'ngRoute' , 'ngResource' , 'meusServicos'])
     .config(function($routeProvider, $locationProvider) {
 
         $locationProvider.html5mode(true);

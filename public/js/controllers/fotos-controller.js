@@ -1,5 +1,5 @@
 // DEFININDO A FOTO PARA A VIEW.
-angular.module('ImoveisNR').controller('FotosController', function($scope,$http,recursoFoto) {
+angular.module('projeto_imoveis_angularjs').controller('FotosController', function($scope,$http,recursoFoto) {
 
     // SCOPE SERVE PARA O CONTROLLER CONSEGUIR DISPONIBILIZAR DADOS PARA A VIEW.
     $scope.fotos = []; 
