@@ -4,10 +4,11 @@
 </div>
 <!-- FIM TÍTULO DO SITE. -->
 
+<!-- INÍCIO MENSAGEM DE ALERTA. -->
 <p ng-show="mensagem.length" class="alert alert-info">
    {{mensagem}}
 </p>
-
+<!-- FIM MENSAGEM DE ALERTA. -->
 <!-- INÍCIO NAVBAR. -->
 <div class="row">
    <div class="col-md-12">
@@ -18,26 +19,24 @@
          <nav class="navBarMenu">
             <ul class="nav nav-pills" role="tablist">
             <li class="nav-item">
-               <a class="nav-link active" data-toggle="pill" href="#home">Página Inicial</a>
+               <a href="/fotos" class="nav-link linkAtivo" data-toggle="pill" href="#home">Página Inicial</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" data-toggle="pill" href="#menu1">Casas</a>
+               <a href="/fotos/casas" class="nav-link" data-toggle="pill" href="#menu1">Casas</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" data-toggle="pill" href="#menu2">Apartamentos</a>
+               <a href="/fotos/apartamentos" class="nav-link" data-toggle="pill" href="#menu2">Apartamentos</a>
             </li>
             <li class="nav-item">
-                  <a class="nav-link" data-toggle="pill" href="#menu2">Studios</a>
+                <a href="/fotos/studios" class="nav-link" data-toggle="pill" href="#menu2">Studios</a>
             </li>
             <li class="nav-item">
-                  <a class="nav-link" data-toggle="pill" href="#menu2">Comercial</a>
+                <a href="/fotos/comercial" class="nav-link" data-toggle="pill" href="#menu2">Comercial</a>
             </li>
             </ul>
          </nav>
-    
-               <!-- Tab panes -->
       </div>
-   </div>     
+   </div>
 </div>
 <!-- FIM NAVBAR. -->
 
@@ -51,7 +50,7 @@
             Novo Imóvel
             </a>
             </span>
-            <input class="form-control" placeholder="Filtrar pelo título do Imóvel." 
+            <input class="form-control" placeholder="Filtrar pelo título do Imóvel."
                ng-model="filtro" ng-model-options="{ debounce: 500 }">
       </form>
    </div> <!-- fim col-md-12 -->

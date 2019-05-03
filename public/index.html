@@ -9,26 +9,39 @@
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="css/style.css">
 
+        <!-- INÍCIO SCRIPTS ANGULARJS. -->
 		<script src="js/lib/angular.min.js"></script>
         <script src="js/lib/angular-animate.min.js"></script>
         <script src="js/lib/angular-route.min.js"></script>
         <script src="js/lib/angular-resource.min.js"></script>
+        <!-- FIM SCRIPTS ANGULARJS. -->
 
 		<script src="js/main.js"></script>
 
-		<script src="js/controllers/fotos-controller.js"></script>
+        <!-- INÍCIO SCRIPITS - CONTROLLERS. -->
         <script src="js/controllers/foto-controller.js"></script>
-		<script src="js/controllers/grupos-controller.js"></script>
+		<script src="js/controllers/fotos-controller.js"></script>
+        <script src="js/controllers/grupos-controller.js"></script>
+        <script src="js/controllers/casas-controller.js"></script>
+        <script src="js/controllers/apartamentos-controller.js"></script>
+        <script src="js/controllers/studios-controller.js"></script>
+        <script src="js/controllers/comercial-controller.js"></script>
+        <!-- FIM SCRIPTS - CONTROLLERS. -->
 
-		<script src="js/directives/minhas-diretivas.js"></script>
-		
+        <!-- INÍCIO SCRIPTS - DIRETIVAS. -->
+        <script src="js/directives/minhas-diretivas.js"></script>
+        <!-- FIM SCRIPTS - DIRETIVAS. -->
+
+        <!-- INÍCIO SCRIPTS - SERVICES. -->
         <script src="js/services/meus-servicos.js"></script>
+        <!-- FIM SCRIPTS - SERVICES. -->
 	</head>
 	<body>
 		<div class="container">
 
+
 			<ng-view></ng-view>
 
-		</div>         
+		</div>
 	</body>
 </html>

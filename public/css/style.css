@@ -9,7 +9,7 @@
     transition: transform 0.8s;
 }
 
-.painel-animado.ng-leave-active { 
+.painel-animado.ng-leave-active {
     -moz-transform: scale(0.1);
     -webkit-trasnform: scale(0.1);
     -ms-trasnform: scale(0.1);
@@ -21,7 +21,7 @@
 
 /* INÍCIO BOTÃO EDITAR. */
 .btn-editar {
-    
+
     margin-top: 10px;
     margin-bottom: 10px;
 
@@ -31,5 +31,9 @@
 /* INÍCIO NAVBAR. */
 .navBarMenu {
     margin-bottom: 15px;
+}
+
+.linkAtivo {
+
 }
 /* FIM NAVBAR. */
