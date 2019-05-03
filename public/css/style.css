@@ -1,4 +1,7 @@
+/* INÍCIO PAINEL ANIMADO. */
 .painel-animado {
+     margin-top: 15px;
+     margin-left: 15px;
     -moz-transition: transform 0.8s;
     -webkit-transition: trasnform 0.8s;
     -ms-transition: trasnform 0.8s;
@@ -13,3 +16,20 @@
     -o-transform: scale(0.1);
     transform: scale(0.1);
 }
+
+/*  FIM PAINEL ANIMADO. */
+
+/* INÍCIO BOTÃO EDITAR. */
+.btn-editar {
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+/* FIM BOTÃO EDITAR. */
+
+/* INÍCIO NAVBAR. */
+.navBarMenu {
+    margin-bottom: 15px;
+}
+/* FIM NAVBAR. */
