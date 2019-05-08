@@ -30,6 +30,7 @@ angular.module('minhasDiretivas', [])
         
         return ddo;
     })
+    
     .directive('meuBotaoPerigo', function() {
         var ddo = {};
         ddo.restrict = "E";
@@ -53,6 +54,7 @@ angular.module('minhasDiretivas', [])
 
         return ddo;
     })
+    // INÍCIO LISTA DE IMÓVEIS QUE APARECE EM BAIXO DOS PAINÉIS.
     .directive('meusTitulos', function() {
         var ddo = {};
         ddo.restrict = 'E';
@@ -66,3 +68,4 @@ angular.module('minhasDiretivas', [])
         };
         return ddo;
     });
+    // FIM LISTA DE IMÓVEIS QUE APARECE EM BAIXO DOS PAINÉIS.
