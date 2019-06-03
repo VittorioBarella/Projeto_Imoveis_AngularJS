@@ -5,11 +5,11 @@
      <form novalidate name="formulario" class="row" ng-submit="submeter()">
         <div class="col-md-6">
            <div class="form-group">
-              <label>Título</label>
+              <label>Nome do Empreendimento</label>
               <input name="titulo" class="form-control" ng-model="foto.titulo" required>  
               <span ng-show = "formulario.$submitted && formulario.titulo.$error.required"
                  class="form-control alert-danger">
-              Título obrigatório
+              Nome obrigatório
               </span>
               <span ng-show="formulario.$submitted && formulario.titulo.$error.maxlength" 
                  class="form-control alert-danger">
