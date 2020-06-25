@@ -9,35 +9,23 @@
    {{mensagem}}
 </p>
 <!-- FIM MENSAGEM DE ALERTA. -->
-<!-- INÍCIO NAVBAR. -->  
-   <div class="row">
-      <div class="col-md-12">
-         <div class="container">
-            <h2>Selecione sua opção:</h2>
-            <br>
-            <!-- Nav pills -->   
-            <nav class="navBarMenu">
-               <ul class="nav nav-pills" role="tablist">
+<!-- INÍCIO NAVBAR. -->
+<div class="row">
+   <div class="col-md-12">
+      <div class="container">
+         <h2>Selecione sua opção:</h2>
+         <br>
+         <!-- Nav pills -->
+         <nav class="navBarMenu">
+            <ul class="nav nav-pills" role="tablist">
                <li class="nav-item">
                   <a href="/fotos" class="nav-link linkAtivo" data-toggle="pill" href="#home">Página Inicial</a>
                </li>
-               <li class="nav-item">
-                  <a href="/fotos/casas" class="nav-link" data-toggle="pill" href="#menu1">Casas</a>
-               </li>
-               <li class="nav-item">
-                  <a href="/fotos/apartamentos" class="nav-link" data-toggle="pill" href="#menu2">Apartamentos</a>
-               </li>
-               <li class="nav-item">
-                  <a href="/fotos/studios" class="nav-link" data-toggle="pill" href="#menu2">Studios</a>
-               </li>
-               <li class="nav-item">
-                  <a href="/fotos/comercial" class="nav-link" data-toggle="pill" href="#menu2">Comercial</a>
-               </li>
-               </ul>
-            </nav>
-         </div>
+            </ul>
+         </nav>
       </div>
-   </div>     
+   </div>
+</div>
 <!-- FIM NAVBAR. -->
 
 <!-- INÍCIO BARRA PARA FILTRAR IMÓVEIS. -->
@@ -46,14 +34,14 @@
       <form>
          <div class="input-group">
             <span class="input-group-btn">
-            <a href="/fotos/new" class="btn btn-primary" type="button">
-            Novo Imóvel
-            </a>
+               <a href="/fotos/new" class="btn btn-primary" type="button">
+                  Novo Imóvel
+               </a>
             </span>
-            <input class="form-control" placeholder="Filtrar pelo título do Imóvel."
-               ng-model="filtro" ng-model-options="{ debounce: 500 }">
+            <input class="form-control" placeholder="Filtrar pelo título do Imóvel." ng-model="filtro"
+               ng-model-options="{ debounce: 500 }">
       </form>
-   </div> 
+   </div>
 </div>
 <!-- FIM BARRA PARA FILTRAR IMÓVEIS. -->
 
@@ -62,7 +50,7 @@
    <meu-painel class="col-md-2 painel-animado" ng-repeat="foto in fotos | filter: filtro" titulo="{{foto.titulo}}">
       <minha-foto url="{{foto.url}}" alt="{{foto.titulo}}"></minha-foto>
       <a class="btn btn-primary btn-block btn-editar" href="/fotos/edit/{{foto._id}}">
-      Editar
+         Editar
       </a>
       <meu-botao-perigo nome="Remover" acao="remover(foto)">Remover</meu-botao-perigo>
    </meu-painel>
